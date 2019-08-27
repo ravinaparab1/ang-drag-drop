@@ -1,0 +1,96 @@
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.min-steps-height {
+  min-height: 100vh;
+}
+
+.close-icon-svg {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+
+.input-file {
+  margin: 10px auto;
+  border: 1px dashed #b2b2b2;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  width: 80% !important;
+  height: auto !important;
+  padding: 40px 80px !important;
+}
+
+.form-group {
+  position: relative;
+  text-align: center;
+  margin-top: 5;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-fill-wrapper {
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  opacity: 1;
+}
+
+.progress-fill-wrapper span {
+  display: block;
+  height: 100%;
+}
+
+.progress-fill {
+  background-color: #aa525b;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: both;
+  -webkit-animation: progressBar 3s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: progressBar 3s ease-in-out;
+  -moz-animation-fill-mode: both;
+}

@@ -1,0 +1,27 @@
+<div class="input-file d-flex flex-column justify-content-evenly cursor-pointer" (click)="browse()" dragDrop (files)="fileDropped($event)"
+    *ngIf="!file || inProgress; else preview">
+    <div class="text-center" *ngIf="!file; else progress">
+        <div class="pt-2">
+            <small class="upload-box">Drag and Drop scanned</small><br>
+            <small class="upload-box"> Document or Browse.</small>
+        </div>
+    </div>
+    <ng-template #progress>
+        <div class="form-group">
+            <div class="close-icon-svg d-flex">
+                <span>{{name}} <span (click)="remove($event)">X</span></span>
+            </div>
+            <div class="progress-fill-wrapper fade-animation">
+                <span class="progress-fill-container"><span class="progress-fill"></span></span>
+            </div>
+        </div>
+    </ng-template>
+</div>
+<ng-template #preview>
+    <div class="close-icon-svg d-flex justify-content-end w-100">
+        <div (click)="remove($event)"><span>X</span></div>
+    </div>
+    <img [src]="file.url" [hidden]="!isVisible(1)" class="w-100" />
+    <iframe [src]="file.url" class="w-100 min-steps-height" [hidden]="!isVisible(0)" frameborder="0"></iframe>
+</ng-template>
+<input type="file" #fileInput hidden (change)="fileSelected($event)" />
