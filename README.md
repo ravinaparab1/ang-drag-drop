@@ -28,6 +28,8 @@ Add the ```ang-loader``` child component to your component
 <ang-drag-drop></ang-drag-drop>
 ```
 
+And you are good to go!
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
