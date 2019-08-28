@@ -1,5 +1,5 @@
 # ang-drag-drop
-ang-loader is a lightweight plug-and-play library for uploading  pdf/image files through drag/drop or browse.
+ang-drag-drop is a lightweight plug-and-play library for uploading  pdf/image files through drag/drop or browse.
 
 
 ## Installation
@@ -22,7 +22,7 @@ import { AngDragDropModule } from 'ang-drag-drop';
 });
 ```
 
-Add the ```ang-loader``` child component to your component
+Add the ```ang-drag-drop``` child component to your component
 
 ```
 <ang-drag-drop></ang-drag-drop>
